@@ -15,6 +15,8 @@
 		9D2C08B61B63786500BA7981 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08B41B63786500BA7981 /* HomeViewController.xib */; };
 		9D2C08C91B63876300BA7981 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2C08C41B63873A00BA7981 /* SwifteriOS.framework */; };
 		9D2C08CA1B63876300BA7981 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2C08C41B63873A00BA7981 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D2C08D11B63893C00BA7981 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08CF1B63893C00BA7981 /* AuthViewController.swift */; };
+		9D2C08D21B63893C00BA7981 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08D01B63893C00BA7981 /* AuthViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		9D2C08B31B63786500BA7981 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Source/ViewControllers/HomeViewController/HomeViewController.swift; sourceTree = "<group>"; };
 		9D2C08B41B63786500BA7981 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = Source/ViewControllers/HomeViewController/HomeViewController.xib; sourceTree = "<group>"; };
 		9D2C08BA1B63873A00BA7981 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = Submodules/Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		9D2C08CF1B63893C00BA7981 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthViewController.swift; path = Source/ViewControllers/AuthViewController/AuthViewController.swift; sourceTree = "<group>"; };
+		9D2C08D01B63893C00BA7981 /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AuthViewController.xib; path = Source/ViewControllers/AuthViewController/AuthViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,7 @@
 		9D2C08B11B63773300BA7981 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9D2C08CE1B63891900BA7981 /* AuthViewController */,
 				9D2C08B21B63774700BA7981 /* HomeViewController */,
 			);
 			name = ViewControllers;
@@ -215,6 +220,15 @@
 				9D2C08C81B63873A00BA7981 /* SwifterDemoMac.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9D2C08CE1B63891900BA7981 /* AuthViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08CF1B63893C00BA7981 /* AuthViewController.swift */,
+				9D2C08D01B63893C00BA7981 /* AuthViewController.xib */,
+			);
+			name = AuthViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2C08D21B63893C00BA7981 /* AuthViewController.xib in Resources */,
 				9D2C089C1B6372E800BA7981 /* LaunchScreen.xib in Resources */,
 				9D2C08991B6372E800BA7981 /* Images.xcassets in Resources */,
 				9D2C08B61B63786500BA7981 /* HomeViewController.xib in Resources */,
@@ -357,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D2C08921B6372E800BA7981 /* AppDelegate.swift in Sources */,
+				9D2C08D11B63893C00BA7981 /* AuthViewController.swift in Sources */,
 				9D2C08B51B63786500BA7981 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

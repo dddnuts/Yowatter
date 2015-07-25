@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds);
         if let window = window {
-            var homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+            var homeVC = AuthViewController(nibName: "AuthViewController", bundle: nil)
             var homeNC = UINavigationController(rootViewController: homeVC)
             
             window.rootViewController = homeNC;
