@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9D2C08921B6372E800BA7981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08911B6372E800BA7981 /* AppDelegate.swift */; };
-		9D2C08941B6372E800BA7981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08931B6372E800BA7981 /* ViewController.swift */; };
-		9D2C08971B6372E800BA7981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08951B6372E800BA7981 /* Main.storyboard */; };
 		9D2C08991B6372E800BA7981 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08981B6372E800BA7981 /* Images.xcassets */; };
 		9D2C089C1B6372E800BA7981 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C089A1B6372E800BA7981 /* LaunchScreen.xib */; };
 		9D2C08A81B6372E900BA7981 /* YowatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08A71B6372E900BA7981 /* YowatterTests.swift */; };
+		9D2C08B51B63786500BA7981 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08B31B63786500BA7981 /* HomeViewController.swift */; };
+		9D2C08B61B63786500BA7981 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08B41B63786500BA7981 /* HomeViewController.xib */; };
+		9D2C08C91B63876300BA7981 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2C08C41B63873A00BA7981 /* SwifteriOS.framework */; };
+		9D2C08CA1B63876300BA7981 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2C08C41B63873A00BA7981 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D2C08D11B63893C00BA7981 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08CF1B63893C00BA7981 /* AuthViewController.swift */; };
+		9D2C08D21B63893C00BA7981 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08D01B63893C00BA7981 /* AuthViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,19 +27,71 @@
 			remoteGlobalIDString = 9D2C088B1B6372E800BA7981;
 			remoteInfo = Yowatter;
 		};
+		9D2C08C11B63873A00BA7981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D2C08BA1B63873A00BA7981 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		9D2C08C31B63873A00BA7981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D2C08BA1B63873A00BA7981 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		9D2C08C51B63873A00BA7981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D2C08BA1B63873A00BA7981 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		9D2C08C71B63873A00BA7981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D2C08BA1B63873A00BA7981 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		9D2C08CB1B63876300BA7981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D2C08BA1B63873A00BA7981 /* Swifter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B9F50ED1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D2C08CD1B63876300BA7981 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D2C08CA1B63876300BA7981 /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9D2C088C1B6372E800BA7981 /* Yowatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yowatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2C08901B6372E800BA7981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D2C08911B6372E800BA7981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D2C08931B6372E800BA7981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9D2C08961B6372E800BA7981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D2C08981B6372E800BA7981 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9D2C089B1B6372E800BA7981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9D2C08A11B6372E900BA7981 /* YowatterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YowatterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2C08A61B6372E900BA7981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D2C08A71B6372E900BA7981 /* YowatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YowatterTests.swift; sourceTree = "<group>"; };
+		9D2C08B31B63786500BA7981 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Source/ViewControllers/HomeViewController/HomeViewController.swift; sourceTree = "<group>"; };
+		9D2C08B41B63786500BA7981 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = Source/ViewControllers/HomeViewController/HomeViewController.xib; sourceTree = "<group>"; };
+		9D2C08BA1B63873A00BA7981 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = Submodules/Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		9D2C08CF1B63893C00BA7981 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthViewController.swift; path = Source/ViewControllers/AuthViewController/AuthViewController.swift; sourceTree = "<group>"; };
+		9D2C08D01B63893C00BA7981 /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AuthViewController.xib; path = Source/ViewControllers/AuthViewController/AuthViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2C08C91B63876300BA7981 /* SwifteriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +118,7 @@
 			children = (
 				9D2C088E1B6372E800BA7981 /* Yowatter */,
 				9D2C08A41B6372E900BA7981 /* YowatterTests */,
+				9D2C08B81B63872400BA7981 /* Submodules */,
 				9D2C088D1B6372E800BA7981 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,9 +135,8 @@
 		9D2C088E1B6372E800BA7981 /* Yowatter */ = {
 			isa = PBXGroup;
 			children = (
+				9D2C08B71B63786B00BA7981 /* Source */,
 				9D2C08911B6372E800BA7981 /* AppDelegate.swift */,
-				9D2C08931B6372E800BA7981 /* ViewController.swift */,
-				9D2C08951B6372E800BA7981 /* Main.storyboard */,
 				9D2C08981B6372E800BA7981 /* Images.xcassets */,
 				9D2C089A1B6372E800BA7981 /* LaunchScreen.xib */,
 				9D2C088F1B6372E800BA7981 /* Supporting Files */,
@@ -112,6 +169,68 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9D2C08B11B63773300BA7981 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08CE1B63891900BA7981 /* AuthViewController */,
+				9D2C08B21B63774700BA7981 /* HomeViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9D2C08B21B63774700BA7981 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08B31B63786500BA7981 /* HomeViewController.swift */,
+				9D2C08B41B63786500BA7981 /* HomeViewController.xib */,
+			);
+			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		9D2C08B71B63786B00BA7981 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08B11B63773300BA7981 /* ViewControllers */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		9D2C08B81B63872400BA7981 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08B91B63873300BA7981 /* Swifter */,
+			);
+			name = Submodules;
+			sourceTree = "<group>";
+		};
+		9D2C08B91B63873300BA7981 /* Swifter */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08BA1B63873A00BA7981 /* Swifter.xcodeproj */,
+			);
+			name = Swifter;
+			sourceTree = "<group>";
+		};
+		9D2C08BB1B63873A00BA7981 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08C21B63873A00BA7981 /* SwifterDemoiOS.app */,
+				9D2C08C41B63873A00BA7981 /* SwifteriOS.framework */,
+				9D2C08C61B63873A00BA7981 /* SwifterMac.framework */,
+				9D2C08C81B63873A00BA7981 /* SwifterDemoMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D2C08CE1B63891900BA7981 /* AuthViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08CF1B63893C00BA7981 /* AuthViewController.swift */,
+				9D2C08D01B63893C00BA7981 /* AuthViewController.xib */,
+			);
+			name = AuthViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +241,12 @@
 				9D2C08881B6372E800BA7981 /* Sources */,
 				9D2C08891B6372E800BA7981 /* Frameworks */,
 				9D2C088A1B6372E800BA7981 /* Resources */,
+				9D2C08CD1B63876300BA7981 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9D2C08CC1B63876300BA7981 /* PBXTargetDependency */,
 			);
 			name = Yowatter;
 			productName = Yowatter;
@@ -179,6 +300,12 @@
 			mainGroup = 9D2C08831B6372E800BA7981;
 			productRefGroup = 9D2C088D1B6372E800BA7981 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9D2C08BB1B63873A00BA7981 /* Products */;
+					ProjectRef = 9D2C08BA1B63873A00BA7981 /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9D2C088B1B6372E800BA7981 /* Yowatter */,
@@ -187,14 +314,46 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		9D2C08C21B63873A00BA7981 /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = 9D2C08C11B63873A00BA7981 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9D2C08C41B63873A00BA7981 /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = 9D2C08C31B63873A00BA7981 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9D2C08C61B63873A00BA7981 /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = 9D2C08C51B63873A00BA7981 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9D2C08C81B63873A00BA7981 /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = 9D2C08C71B63873A00BA7981 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		9D2C088A1B6372E800BA7981 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D2C08971B6372E800BA7981 /* Main.storyboard in Resources */,
+				9D2C08D21B63893C00BA7981 /* AuthViewController.xib in Resources */,
 				9D2C089C1B6372E800BA7981 /* LaunchScreen.xib in Resources */,
 				9D2C08991B6372E800BA7981 /* Images.xcassets in Resources */,
+				9D2C08B61B63786500BA7981 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D2C08941B6372E800BA7981 /* ViewController.swift in Sources */,
 				9D2C08921B6372E800BA7981 /* AppDelegate.swift in Sources */,
+				9D2C08D11B63893C00BA7981 /* AuthViewController.swift in Sources */,
+				9D2C08B51B63786500BA7981 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,17 +393,14 @@
 			target = 9D2C088B1B6372E800BA7981 /* Yowatter */;
 			targetProxy = 9D2C08A21B6372E900BA7981 /* PBXContainerItemProxy */;
 		};
+		9D2C08CC1B63876300BA7981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwifteriOS;
+			targetProxy = 9D2C08CB1B63876300BA7981 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9D2C08951B6372E800BA7981 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9D2C08961B6372E800BA7981 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9D2C089A1B6372E800BA7981 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -409,6 +566,7 @@
 				9D2C08AD1B6372E900BA7981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D2C08AE1B6372E900BA7981 /* Build configuration list for PBXNativeTarget "YowatterTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +575,7 @@
 				9D2C08B01B6372E900BA7981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
