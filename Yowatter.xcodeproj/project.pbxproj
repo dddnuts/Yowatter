@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9D2C08921B6372E800BA7981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08911B6372E800BA7981 /* AppDelegate.swift */; };
-		9D2C08941B6372E800BA7981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08931B6372E800BA7981 /* ViewController.swift */; };
-		9D2C08971B6372E800BA7981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08951B6372E800BA7981 /* Main.storyboard */; };
 		9D2C08991B6372E800BA7981 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08981B6372E800BA7981 /* Images.xcassets */; };
 		9D2C089C1B6372E800BA7981 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C089A1B6372E800BA7981 /* LaunchScreen.xib */; };
 		9D2C08A81B6372E900BA7981 /* YowatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08A71B6372E900BA7981 /* YowatterTests.swift */; };
+		9D2C08B51B63786500BA7981 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08B31B63786500BA7981 /* HomeViewController.swift */; };
+		9D2C08B61B63786500BA7981 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08B41B63786500BA7981 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		9D2C088C1B6372E800BA7981 /* Yowatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yowatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2C08901B6372E800BA7981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D2C08911B6372E800BA7981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D2C08931B6372E800BA7981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9D2C08961B6372E800BA7981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D2C08981B6372E800BA7981 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9D2C089B1B6372E800BA7981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9D2C08A11B6372E900BA7981 /* YowatterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YowatterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2C08A61B6372E900BA7981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D2C08A71B6372E900BA7981 /* YowatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YowatterTests.swift; sourceTree = "<group>"; };
+		9D2C08B31B63786500BA7981 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Source/ViewControllers/HomeViewController/HomeViewController.swift; sourceTree = "<group>"; };
+		9D2C08B41B63786500BA7981 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = Source/ViewControllers/HomeViewController/HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +77,8 @@
 		9D2C088E1B6372E800BA7981 /* Yowatter */ = {
 			isa = PBXGroup;
 			children = (
+				9D2C08B71B63786B00BA7981 /* Source */,
 				9D2C08911B6372E800BA7981 /* AppDelegate.swift */,
-				9D2C08931B6372E800BA7981 /* ViewController.swift */,
-				9D2C08951B6372E800BA7981 /* Main.storyboard */,
 				9D2C08981B6372E800BA7981 /* Images.xcassets */,
 				9D2C089A1B6372E800BA7981 /* LaunchScreen.xib */,
 				9D2C088F1B6372E800BA7981 /* Supporting Files */,
@@ -110,6 +109,31 @@
 				9D2C08A61B6372E900BA7981 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9D2C08B11B63773300BA7981 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08B21B63774700BA7981 /* HomeViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9D2C08B21B63774700BA7981 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08B31B63786500BA7981 /* HomeViewController.swift */,
+				9D2C08B41B63786500BA7981 /* HomeViewController.xib */,
+			);
+			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		9D2C08B71B63786B00BA7981 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08B11B63773300BA7981 /* ViewControllers */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +216,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D2C08971B6372E800BA7981 /* Main.storyboard in Resources */,
 				9D2C089C1B6372E800BA7981 /* LaunchScreen.xib in Resources */,
 				9D2C08991B6372E800BA7981 /* Images.xcassets in Resources */,
+				9D2C08B61B63786500BA7981 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D2C08941B6372E800BA7981 /* ViewController.swift in Sources */,
 				9D2C08921B6372E800BA7981 /* AppDelegate.swift in Sources */,
+				9D2C08B51B63786500BA7981 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +260,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9D2C08951B6372E800BA7981 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9D2C08961B6372E800BA7981 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9D2C089A1B6372E800BA7981 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -409,6 +425,7 @@
 				9D2C08AD1B6372E900BA7981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D2C08AE1B6372E900BA7981 /* Build configuration list for PBXNativeTarget "YowatterTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +434,7 @@
 				9D2C08B01B6372E900BA7981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
