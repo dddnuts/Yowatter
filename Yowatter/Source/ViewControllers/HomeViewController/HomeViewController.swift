@@ -10,6 +10,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var tweetTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

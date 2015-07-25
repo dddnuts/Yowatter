@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Yowatter" customModuleProvider="target">
             <connections>
+                <outlet property="tweetTableView" destination="guv-ae-2MH" id="DaL-oS-dRU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,7 +14,22 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="guv-ae-2MH" userLabel="TweetTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="guv-ae-2MH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ccs-Ke-1oV"/>
+                <constraint firstItem="guv-ae-2MH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eFM-L2-h9P"/>
+                <constraint firstAttribute="bottom" secondItem="guv-ae-2MH" secondAttribute="bottom" id="oLa-je-Iva"/>
+                <constraint firstAttribute="trailing" secondItem="guv-ae-2MH" secondAttribute="trailing" id="w3p-YN-lOt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>

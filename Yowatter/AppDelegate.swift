@@ -17,11 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds);
         if let window = window {
-            var homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil);
-            var homeNC = UINavigationController(rootViewController: homeVC);
+            var homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+            var homeNC = UINavigationController(rootViewController: homeVC)
             
             window.rootViewController = homeNC;
-            window.makeKeyAndVisible();
+            window.makeKeyAndVisible()
         }
         
         return true
