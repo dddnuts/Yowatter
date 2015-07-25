@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D2C08921B6372E800BA7981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08911B6372E800BA7981 /* AppDelegate.swift */; };
+		9D2C08941B6372E800BA7981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08931B6372E800BA7981 /* ViewController.swift */; };
+		9D2C08971B6372E800BA7981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08951B6372E800BA7981 /* Main.storyboard */; };
+		9D2C08991B6372E800BA7981 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08981B6372E800BA7981 /* Images.xcassets */; };
+		9D2C089C1B6372E800BA7981 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C089A1B6372E800BA7981 /* LaunchScreen.xib */; };
+		9D2C08A81B6372E900BA7981 /* YowatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08A71B6372E900BA7981 /* YowatterTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D2C08A21B6372E900BA7981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D2C08841B6372E800BA7981 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D2C088B1B6372E800BA7981;
+			remoteInfo = Yowatter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D2C088C1B6372E800BA7981 /* Yowatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yowatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D2C08901B6372E800BA7981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D2C08911B6372E800BA7981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D2C08931B6372E800BA7981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D2C08961B6372E800BA7981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D2C08981B6372E800BA7981 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9D2C089B1B6372E800BA7981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9D2C08A11B6372E900BA7981 /* YowatterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YowatterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D2C08A61B6372E900BA7981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D2C08A71B6372E900BA7981 /* YowatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YowatterTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D2C08891B6372E800BA7981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D2C089E1B6372E900BA7981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D2C08831B6372E800BA7981 = {
+			isa = PBXGroup;
+			children = (
+				9D2C088E1B6372E800BA7981 /* Yowatter */,
+				9D2C08A41B6372E900BA7981 /* YowatterTests */,
+				9D2C088D1B6372E800BA7981 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D2C088D1B6372E800BA7981 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C088C1B6372E800BA7981 /* Yowatter.app */,
+				9D2C08A11B6372E900BA7981 /* YowatterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D2C088E1B6372E800BA7981 /* Yowatter */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08911B6372E800BA7981 /* AppDelegate.swift */,
+				9D2C08931B6372E800BA7981 /* ViewController.swift */,
+				9D2C08951B6372E800BA7981 /* Main.storyboard */,
+				9D2C08981B6372E800BA7981 /* Images.xcassets */,
+				9D2C089A1B6372E800BA7981 /* LaunchScreen.xib */,
+				9D2C088F1B6372E800BA7981 /* Supporting Files */,
+			);
+			path = Yowatter;
+			sourceTree = "<group>";
+		};
+		9D2C088F1B6372E800BA7981 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08901B6372E800BA7981 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9D2C08A41B6372E900BA7981 /* YowatterTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08A71B6372E900BA7981 /* YowatterTests.swift */,
+				9D2C08A51B6372E900BA7981 /* Supporting Files */,
+			);
+			path = YowatterTests;
+			sourceTree = "<group>";
+		};
+		9D2C08A51B6372E900BA7981 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08A61B6372E900BA7981 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D2C088B1B6372E800BA7981 /* Yowatter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D2C08AB1B6372E900BA7981 /* Build configuration list for PBXNativeTarget "Yowatter" */;
+			buildPhases = (
+				9D2C08881B6372E800BA7981 /* Sources */,
+				9D2C08891B6372E800BA7981 /* Frameworks */,
+				9D2C088A1B6372E800BA7981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yowatter;
+			productName = Yowatter;
+			productReference = 9D2C088C1B6372E800BA7981 /* Yowatter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D2C08A01B6372E900BA7981 /* YowatterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D2C08AE1B6372E900BA7981 /* Build configuration list for PBXNativeTarget "YowatterTests" */;
+			buildPhases = (
+				9D2C089D1B6372E900BA7981 /* Sources */,
+				9D2C089E1B6372E900BA7981 /* Frameworks */,
+				9D2C089F1B6372E900BA7981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D2C08A31B6372E900BA7981 /* PBXTargetDependency */,
+			);
+			name = YowatterTests;
+			productName = YowatterTests;
+			productReference = 9D2C08A11B6372E900BA7981 /* YowatterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D2C08841B6372E800BA7981 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = dddnuts;
+				TargetAttributes = {
+					9D2C088B1B6372E800BA7981 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					9D2C08A01B6372E900BA7981 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 9D2C088B1B6372E800BA7981;
+					};
+				};
+			};
+			buildConfigurationList = 9D2C08871B6372E800BA7981 /* Build configuration list for PBXProject "Yowatter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D2C08831B6372E800BA7981;
+			productRefGroup = 9D2C088D1B6372E800BA7981 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D2C088B1B6372E800BA7981 /* Yowatter */,
+				9D2C08A01B6372E900BA7981 /* YowatterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D2C088A1B6372E800BA7981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D2C08971B6372E800BA7981 /* Main.storyboard in Resources */,
+				9D2C089C1B6372E800BA7981 /* LaunchScreen.xib in Resources */,
+				9D2C08991B6372E800BA7981 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D2C089F1B6372E900BA7981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D2C08881B6372E800BA7981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D2C08941B6372E800BA7981 /* ViewController.swift in Sources */,
+				9D2C08921B6372E800BA7981 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D2C089D1B6372E900BA7981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D2C08A81B6372E900BA7981 /* YowatterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D2C08A31B6372E900BA7981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D2C088B1B6372E800BA7981 /* Yowatter */;
+			targetProxy = 9D2C08A21B6372E900BA7981 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D2C08951B6372E800BA7981 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D2C08961B6372E800BA7981 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D2C089A1B6372E800BA7981 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D2C089B1B6372E800BA7981 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D2C08A91B6372E900BA7981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D2C08AA1B6372E900BA7981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D2C08AC1B6372E900BA7981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Yowatter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9D2C08AD1B6372E900BA7981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Yowatter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9D2C08AF1B6372E900BA7981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YowatterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yowatter.app/Yowatter";
+			};
+			name = Debug;
+		};
+		9D2C08B01B6372E900BA7981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YowatterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yowatter.app/Yowatter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D2C08871B6372E800BA7981 /* Build configuration list for PBXProject "Yowatter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D2C08A91B6372E900BA7981 /* Debug */,
+				9D2C08AA1B6372E900BA7981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D2C08AB1B6372E900BA7981 /* Build configuration list for PBXNativeTarget "Yowatter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D2C08AC1B6372E900BA7981 /* Debug */,
+				9D2C08AD1B6372E900BA7981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9D2C08AE1B6372E900BA7981 /* Build configuration list for PBXNativeTarget "YowatterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D2C08AF1B6372E900BA7981 /* Debug */,
+				9D2C08B01B6372E900BA7981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D2C08841B6372E800BA7981 /* Project object */;
+}
