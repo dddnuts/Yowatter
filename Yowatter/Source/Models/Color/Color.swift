@@ -33,4 +33,13 @@ struct Color {
     static func cream() -> UIColor {
         return colorWithRGB256(239, green: 231, blue: 190)
     }
+    
+    static func apply() {
+        UINavigationBar.appearance().barTintColor = Color.darkBlue()
+        UINavigationBar.appearance().tintColor = Color.orange()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: Color.cream()]
+        
+        UITableView.appearance().backgroundColor = Color.cream()
+        UITableViewCell.appearance().backgroundColor = Color.cream()
+    }
 }
