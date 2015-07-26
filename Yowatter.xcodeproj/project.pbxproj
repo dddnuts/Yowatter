@@ -17,6 +17,7 @@
 		9D2C08CA1B63876300BA7981 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2C08C41B63873A00BA7981 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D2C08D11B63893C00BA7981 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08CF1B63893C00BA7981 /* AuthViewController.swift */; };
 		9D2C08D21B63893C00BA7981 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08D01B63893C00BA7981 /* AuthViewController.xib */; };
+		9D2C08DF1B64601F00BA7981 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08DE1B64601F00BA7981 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		9D2C08BA1B63873A00BA7981 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = Submodules/Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
 		9D2C08CF1B63893C00BA7981 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthViewController.swift; path = Source/ViewControllers/AuthViewController/AuthViewController.swift; sourceTree = "<group>"; };
 		9D2C08D01B63893C00BA7981 /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AuthViewController.xib; path = Source/ViewControllers/AuthViewController/AuthViewController.xib; sourceTree = "<group>"; };
+		9D2C08DE1B64601F00BA7981 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Source/Models/Color/Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 		9D2C08B71B63786B00BA7981 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9D2C08D91B645FD200BA7981 /* Models */,
 				9D2C08B11B63773300BA7981 /* ViewControllers */,
 			);
 			name = Source;
@@ -229,6 +232,22 @@
 				9D2C08D01B63893C00BA7981 /* AuthViewController.xib */,
 			);
 			name = AuthViewController;
+			sourceTree = "<group>";
+		};
+		9D2C08D91B645FD200BA7981 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08DD1B645FDA00BA7981 /* Color */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9D2C08DD1B645FDA00BA7981 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08DE1B64601F00BA7981 /* Color.swift */,
+			);
+			name = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D2C08921B6372E800BA7981 /* AppDelegate.swift in Sources */,
+				9D2C08DF1B64601F00BA7981 /* Color.swift in Sources */,
 				9D2C08D11B63893C00BA7981 /* AuthViewController.swift in Sources */,
 				9D2C08B51B63786500BA7981 /* HomeViewController.swift in Sources */,
 			);
