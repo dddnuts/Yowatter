@@ -35,6 +35,9 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         self.tweetTableView.registerNib(UINib(nibName: "TweetCell", bundle: nil), forCellReuseIdentifier: tweetCellId)
         self.tweetTableView.dataSource = self
         
+        self.tweetTableView.estimatedRowHeight = 120
+        self.tweetTableView.rowHeight = UITableViewAutomaticDimension
+        
         self.twitter?.getStatusesHomeTimelineWithCount(20, success: {
             statuses in
             
@@ -58,6 +61,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         
         let tweet = self.tweets[indexPath.row]
         cell.showTweet(tweet)
+        cell.layoutIfNeeded()
         
         return cell
     }

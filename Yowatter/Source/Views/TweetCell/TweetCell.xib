@@ -15,27 +15,27 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="zeS-wr-iCx" userLabel="UserImageView">
-                        <rect key="frame" x="8" y="24" width="72" height="72"/>
+                        <rect key="frame" x="8" y="24" width="42" height="42"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="72" id="P66-4o-6W6"/>
-                            <constraint firstAttribute="height" constant="72" id="yLw-Pb-phB"/>
+                            <constraint firstAttribute="width" constant="42" id="P66-4o-6W6"/>
+                            <constraint firstAttribute="height" constant="42" id="yLw-Pb-phB"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="UserName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTu-bs-cpT" userLabel="UserNameLabel">
-                        <rect key="frame" x="85" y="8" width="65" height="16"/>
+                        <rect key="frame" x="55" y="8" width="65" height="16"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="This is my Tweet text. The text length is limited to 140 characters." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQq-Ou-5BZ" userLabel="TextLabel">
-                        <rect key="frame" x="85" y="29" width="227" height="29"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="@screenname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcj-VK-pu3" userLabel="ScreenNameLabel">
+                        <rect key="frame" x="125" y="9" width="187" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="@screenname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcj-VK-pu3" userLabel="ScreenNameLabel">
-                        <rect key="frame" x="155" y="9" width="157" height="14"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="This is my Tweet text. The text length is limited to 140 characters." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQq-Ou-5BZ" userLabel="TextLabel">
+                        <rect key="frame" x="55" y="29" width="257" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -43,16 +43,16 @@
                 <constraints>
                     <constraint firstItem="zeS-wr-iCx" firstAttribute="top" secondItem="DTu-bs-cpT" secondAttribute="bottom" id="2zw-Rn-k7L"/>
                     <constraint firstItem="DTu-bs-cpT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="5sm-Es-5Vb"/>
+                    <constraint firstItem="XQq-Ou-5BZ" firstAttribute="leading" secondItem="DTu-bs-cpT" secondAttribute="leading" id="AKN-3g-2fz"/>
                     <constraint firstItem="zeS-wr-iCx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="AXF-xR-jcV"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Vcj-VK-pu3" secondAttribute="trailing" id="WTk-25-hxV"/>
                     <constraint firstItem="Vcj-VK-pu3" firstAttribute="leading" secondItem="DTu-bs-cpT" secondAttribute="trailing" constant="5" id="jJz-00-UQX"/>
                     <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="zeS-wr-iCx" secondAttribute="bottom" id="kWy-1x-2ru"/>
-                    <constraint firstItem="XQq-Ou-5BZ" firstAttribute="leading" secondItem="DTu-bs-cpT" secondAttribute="leading" id="ptb-lp-tHb"/>
+                    <constraint firstItem="XQq-Ou-5BZ" firstAttribute="top" secondItem="DTu-bs-cpT" secondAttribute="bottom" constant="5" id="mcX-5b-M7B"/>
                     <constraint firstItem="Vcj-VK-pu3" firstAttribute="baseline" secondItem="DTu-bs-cpT" secondAttribute="baseline" constant="-1" id="ruE-B5-fzg"/>
                     <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="XQq-Ou-5BZ" secondAttribute="bottom" id="tYK-pY-j3i"/>
                     <constraint firstItem="DTu-bs-cpT" firstAttribute="leading" secondItem="zeS-wr-iCx" secondAttribute="trailing" constant="5" id="uUY-7F-9gc"/>
                     <constraint firstAttribute="trailingMargin" secondItem="XQq-Ou-5BZ" secondAttribute="trailing" id="vhl-Mh-oJv"/>
-                    <constraint firstItem="XQq-Ou-5BZ" firstAttribute="top" secondItem="DTu-bs-cpT" secondAttribute="bottom" constant="5" id="z9m-Ax-DLx"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

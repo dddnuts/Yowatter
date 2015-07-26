@@ -20,10 +20,23 @@ class TweetCell: UITableViewCell {
         var user = tweet.user
         
         // TODO: set user image
+        self.getDataFromURL(user.profileImage!) { data in
+            dispatch_async(dispatch_get_main_queue()) {
+                self.userImageView.image = UIImage(data: data!)
+            }
+        }
         
         self.userNameLabel.text = user.name
         self.screenNameLabel.text = user.screenName
         
         self.tweetTextLabel.text = tweet.text
+    }
+    
+    private func getDataFromURL(url: NSURL, completion: ((data: NSData?) -> Void)) {
+        NSURLSession.sharedSession().dataTaskWithURL(url) {
+            data, response, error in
+            
+            completion(data: data)
+        }.resume()
     }
 }
