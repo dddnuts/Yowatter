@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="TweetCell" customModule="Yowatter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="zeS-wr-iCx" userLabel="UserImageView">
+                        <rect key="frame" x="8" y="24" width="42" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="P66-4o-6W6"/>
+                            <constraint firstAttribute="height" constant="42" id="yLw-Pb-phB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="UserName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTu-bs-cpT" userLabel="UserNameLabel">
+                        <rect key="frame" x="55" y="8" width="65" height="16"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="@screenname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcj-VK-pu3" userLabel="ScreenNameLabel">
+                        <rect key="frame" x="125" y="9" width="187" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="This is my Tweet text. The text length is limited to 140 characters." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQq-Ou-5BZ" userLabel="TextLabel">
+                        <rect key="frame" x="55" y="29" width="257" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zeS-wr-iCx" firstAttribute="top" secondItem="DTu-bs-cpT" secondAttribute="bottom" id="2zw-Rn-k7L"/>
+                    <constraint firstItem="DTu-bs-cpT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="5sm-Es-5Vb"/>
+                    <constraint firstItem="XQq-Ou-5BZ" firstAttribute="leading" secondItem="DTu-bs-cpT" secondAttribute="leading" id="AKN-3g-2fz"/>
+                    <constraint firstItem="zeS-wr-iCx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="AXF-xR-jcV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Vcj-VK-pu3" secondAttribute="trailing" id="WTk-25-hxV"/>
+                    <constraint firstItem="Vcj-VK-pu3" firstAttribute="leading" secondItem="DTu-bs-cpT" secondAttribute="trailing" constant="5" id="jJz-00-UQX"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="zeS-wr-iCx" secondAttribute="bottom" id="kWy-1x-2ru"/>
+                    <constraint firstItem="XQq-Ou-5BZ" firstAttribute="top" secondItem="DTu-bs-cpT" secondAttribute="bottom" constant="5" id="mcX-5b-M7B"/>
+                    <constraint firstItem="Vcj-VK-pu3" firstAttribute="baseline" secondItem="DTu-bs-cpT" secondAttribute="baseline" constant="-1" id="ruE-B5-fzg"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="XQq-Ou-5BZ" secondAttribute="bottom" id="tYK-pY-j3i"/>
+                    <constraint firstItem="DTu-bs-cpT" firstAttribute="leading" secondItem="zeS-wr-iCx" secondAttribute="trailing" constant="5" id="uUY-7F-9gc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="XQq-Ou-5BZ" secondAttribute="trailing" id="vhl-Mh-oJv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="screenNameLabel" destination="Vcj-VK-pu3" id="WPV-k0-5f8"/>
+                <outlet property="textLabel" destination="XQq-Ou-5BZ" id="iAf-6A-TG7"/>
+                <outlet property="tweetTextLabel" destination="XQq-Ou-5BZ" id="nnw-Rf-1cq"/>
+                <outlet property="userImageView" destination="zeS-wr-iCx" id="tXb-qe-NGV"/>
+                <outlet property="userNameLabel" destination="DTu-bs-cpT" id="crU-SP-3CH"/>
+            </connections>
+            <point key="canvasLocation" x="-137" y="153"/>
+        </tableViewCell>
+    </objects>
+</document>

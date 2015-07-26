@@ -18,6 +18,10 @@
 		9D2C08D11B63893C00BA7981 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08CF1B63893C00BA7981 /* AuthViewController.swift */; };
 		9D2C08D21B63893C00BA7981 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08D01B63893C00BA7981 /* AuthViewController.xib */; };
 		9D2C08DF1B64601F00BA7981 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08DE1B64601F00BA7981 /* Color.swift */; };
+		9D2C08E91B646FA600BA7981 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08E71B646FA600BA7981 /* TweetCell.swift */; };
+		9D2C08EA1B646FA600BA7981 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08E81B646FA600BA7981 /* TweetCell.xib */; };
+		9D2C08EE1B64716200BA7981 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08ED1B64716200BA7981 /* Tweet.swift */; };
+		9D2C08F01B64717300BA7981 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08EF1B64717300BA7981 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +98,10 @@
 		9D2C08CF1B63893C00BA7981 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthViewController.swift; path = Source/ViewControllers/AuthViewController/AuthViewController.swift; sourceTree = "<group>"; };
 		9D2C08D01B63893C00BA7981 /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AuthViewController.xib; path = Source/ViewControllers/AuthViewController/AuthViewController.xib; sourceTree = "<group>"; };
 		9D2C08DE1B64601F00BA7981 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Source/Models/Color/Color.swift; sourceTree = "<group>"; };
+		9D2C08E71B646FA600BA7981 /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TweetCell.swift; path = Source/Views/TweetCell/TweetCell.swift; sourceTree = "<group>"; };
+		9D2C08E81B646FA600BA7981 /* TweetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TweetCell.xib; path = Source/Views/TweetCell/TweetCell.xib; sourceTree = "<group>"; };
+		9D2C08ED1B64716200BA7981 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tweet.swift; path = Source/Models/Data/Tweet.swift; sourceTree = "<group>"; };
+		9D2C08EF1B64717300BA7981 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Source/Models/Data/User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +200,7 @@
 		9D2C08B71B63786B00BA7981 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9D2C08E21B646F7600BA7981 /* Views */,
 				9D2C08D91B645FD200BA7981 /* Models */,
 				9D2C08B11B63773300BA7981 /* ViewControllers */,
 			);
@@ -237,6 +246,7 @@
 		9D2C08D91B645FD200BA7981 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9D2C08EC1B64714C00BA7981 /* Data */,
 				9D2C08DD1B645FDA00BA7981 /* Color */,
 			);
 			name = Models;
@@ -248,6 +258,32 @@
 				9D2C08DE1B64601F00BA7981 /* Color.swift */,
 			);
 			name = Color;
+			sourceTree = "<group>";
+		};
+		9D2C08E21B646F7600BA7981 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08E61B646F7A00BA7981 /* TweetCell */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9D2C08E61B646F7A00BA7981 /* TweetCell */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08E71B646FA600BA7981 /* TweetCell.swift */,
+				9D2C08E81B646FA600BA7981 /* TweetCell.xib */,
+			);
+			name = TweetCell;
+			sourceTree = "<group>";
+		};
+		9D2C08EC1B64714C00BA7981 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C08ED1B64716200BA7981 /* Tweet.swift */,
+				9D2C08EF1B64717300BA7981 /* User.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D2C08D21B63893C00BA7981 /* AuthViewController.xib in Resources */,
+				9D2C08EA1B646FA600BA7981 /* TweetCell.xib in Resources */,
 				9D2C089C1B6372E800BA7981 /* LaunchScreen.xib in Resources */,
 				9D2C08991B6372E800BA7981 /* Images.xcassets in Resources */,
 				9D2C08B61B63786500BA7981 /* HomeViewController.xib in Resources */,
@@ -392,8 +429,11 @@
 			files = (
 				9D2C08921B6372E800BA7981 /* AppDelegate.swift in Sources */,
 				9D2C08DF1B64601F00BA7981 /* Color.swift in Sources */,
+				9D2C08E91B646FA600BA7981 /* TweetCell.swift in Sources */,
+				9D2C08EE1B64716200BA7981 /* Tweet.swift in Sources */,
 				9D2C08D11B63893C00BA7981 /* AuthViewController.swift in Sources */,
 				9D2C08B51B63786500BA7981 /* HomeViewController.swift in Sources */,
+				9D2C08F01B64717300BA7981 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
