@@ -13,8 +13,10 @@ class HomeViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tweetTableView: UITableView!
     
+    let tweetCellId = "tweet_cell_id"
+    
     var twitter: Swifter?
-    var tweets: [JSONValue] = []
+    var tweets: [Tweet] = []
     
     init(twitter: Swifter, nibName: String?, bundle: NSBundle?) {
         self.twitter = twitter
@@ -30,6 +32,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         
         self.title = "Home"
         
+        self.tweetTableView.registerNib(UINib(nibName: "TweetCell", bundle: nil), forCellReuseIdentifier: tweetCellId)
         self.tweetTableView.dataSource = self
         
         self.twitter?.getStatusesHomeTimelineWithCount(20, success: {
@@ -51,10 +54,10 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .Default, reuseIdentifier: nil)
+        let cell = tableView.dequeueReusableCellWithIdentifier(tweetCellId) as! TweetCell
         
         let tweet = self.tweets[indexPath.row]
-        cell.textLabel?.text = tweet["text"].string
+        cell.showTweet(tweet)
         
         return cell
     }
@@ -62,7 +65,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     // Mark: private
     
     private func showTweets(tweets: [JSONValue]?) {
-        self.tweets = tweets!
+        self.tweets = Tweet.parseJSONArray(tweets!)
         
         dispatch_async(dispatch_get_main_queue(), {
             self.tweetTableView.reloadData()

@@ -14,14 +14,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zeS-wr-iCx" userLabel="UserImageView">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="zeS-wr-iCx" userLabel="UserImageView">
                         <rect key="frame" x="8" y="24" width="72" height="72"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="72" id="P66-4o-6W6"/>
                             <constraint firstAttribute="height" constant="72" id="yLw-Pb-phB"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTu-bs-cpT" userLabel="UserNameLabel">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="UserName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTu-bs-cpT" userLabel="UserNameLabel">
                         <rect key="frame" x="85" y="8" width="65" height="16"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -62,7 +62,7 @@
                 <outlet property="userImageView" destination="zeS-wr-iCx" id="tXb-qe-NGV"/>
                 <outlet property="userNameLabel" destination="DTu-bs-cpT" id="crU-SP-3CH"/>
             </connections>
-            <point key="canvasLocation" x="213" y="331"/>
+            <point key="canvasLocation" x="-137" y="153"/>
         </tableViewCell>
     </objects>
 </document>

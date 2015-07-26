@@ -22,6 +22,6 @@ struct Tweet {
     }
     
     static func parseJSON(json: JSONValue) -> Tweet {
-        return Tweet(user: User.parseJSON(json["user"]), text: "")
+        return Tweet(user: User.parseJSON(json["user"]), text: json["text"].string!)
     }
 }

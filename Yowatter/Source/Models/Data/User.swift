@@ -15,6 +15,10 @@ struct User {
     var profileImage: NSURL?
     
     static func parseJSON(json: JSONValue) -> User {
-        return User(name: "", screenName: "", profileImage: NSURL(string: ""))
+        var name = json["name"].string!
+        var screenName = json["screen_name"].string!
+        var profile = NSURL(string: json["profile_image_url"].string!)
+        
+        return User(name: name, screenName: screenName, profileImage: profile)
     }
 }
