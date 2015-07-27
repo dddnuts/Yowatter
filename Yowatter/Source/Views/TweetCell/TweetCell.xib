@@ -33,7 +33,7 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="This is my Tweet text. The text length is limited to 140 characters." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQq-Ou-5BZ" userLabel="TextLabel">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="This is my Tweet text. The text length is limited to 140 characters." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQq-Ou-5BZ" userLabel="TextLabel">
                         <rect key="frame" x="55" y="29" width="257" height="29"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -57,7 +57,6 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="screenNameLabel" destination="Vcj-VK-pu3" id="WPV-k0-5f8"/>
-                <outlet property="textLabel" destination="XQq-Ou-5BZ" id="iAf-6A-TG7"/>
                 <outlet property="tweetTextLabel" destination="XQq-Ou-5BZ" id="nnw-Rf-1cq"/>
                 <outlet property="userImageView" destination="zeS-wr-iCx" id="tXb-qe-NGV"/>
                 <outlet property="userNameLabel" destination="DTu-bs-cpT" id="crU-SP-3CH"/>
