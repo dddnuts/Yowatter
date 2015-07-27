@@ -16,6 +16,11 @@ class TweetCell: UITableViewCell {
     
     @IBOutlet weak var tweetTextLabel: UILabel!
     
+    override func awakeFromNib() {
+        self.userImageView.clipsToBounds = true
+        self.userImageView.layer.cornerRadius = 5
+    }
+    
     func showTweet(tweet: Tweet) {
         var user = tweet.user
         
