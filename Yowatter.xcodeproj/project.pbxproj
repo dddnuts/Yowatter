@@ -22,6 +22,7 @@
 		9D2C08EA1B646FA600BA7981 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08E81B646FA600BA7981 /* TweetCell.xib */; };
 		9D2C08EE1B64716200BA7981 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08ED1B64716200BA7981 /* Tweet.swift */; };
 		9D2C08F01B64717300BA7981 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08EF1B64717300BA7981 /* User.swift */; };
+		9D75DBE21B67B26500C0275E /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D75DBE11B67B26500C0275E /* Timeline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		9D2C08E81B646FA600BA7981 /* TweetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TweetCell.xib; path = Source/Views/TweetCell/TweetCell.xib; sourceTree = "<group>"; };
 		9D2C08ED1B64716200BA7981 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tweet.swift; path = Source/Models/Data/Tweet.swift; sourceTree = "<group>"; };
 		9D2C08EF1B64717300BA7981 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Source/Models/Data/User.swift; sourceTree = "<group>"; };
+		9D75DBE11B67B26500C0275E /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Models/Data/Timeline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +284,7 @@
 			children = (
 				9D2C08ED1B64716200BA7981 /* Tweet.swift */,
 				9D2C08EF1B64717300BA7981 /* User.swift */,
+				9D75DBE11B67B26500C0275E /* Timeline.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D75DBE21B67B26500C0275E /* Timeline.swift in Sources */,
 				9D2C08921B6372E800BA7981 /* AppDelegate.swift in Sources */,
 				9D2C08DF1B64601F00BA7981 /* Color.swift in Sources */,
 				9D2C08E91B646FA600BA7981 /* TweetCell.swift in Sources */,

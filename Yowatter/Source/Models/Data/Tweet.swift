@@ -10,6 +10,7 @@ import UIKit
 import SwifteriOS
 
 struct Tweet {
+    var identifier: NSNumber
     var user: User
     var text: String
     
@@ -22,6 +23,6 @@ struct Tweet {
     }
     
     static func parseJSON(json: JSONValue) -> Tweet {
-        return Tweet(user: User.parseJSON(json["user"]), text: json["text"].string!)
+        return Tweet(identifier: 1, user: User.parseJSON(json["user"]), text: json["text"].string!)
     }
 }
