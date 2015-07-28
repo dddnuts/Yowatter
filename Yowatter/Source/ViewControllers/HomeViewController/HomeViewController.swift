@@ -16,7 +16,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     let tweetCellId = "tweet_cell_id"
     
     var twitter: Swifter?
-    var tweets: [Tweet] = []
+    var timeline: Timeline = Timeline(tweets: [])
     
     init(twitter: Swifter, nibName: String?, bundle: NSBundle?) {
         self.twitter = twitter
@@ -38,28 +38,19 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         self.tweetTableView.estimatedRowHeight = 120
         self.tweetTableView.rowHeight = UITableViewAutomaticDimension
         
-        self.twitter?.getStatusesHomeTimelineWithCount(20, success: {
-            statuses in
-            
-            self.showTweets(statuses)
-            
-        }, failure: {
-            error in
-            
-            self.showAlert("Error", message: "Failed to receive tweets from Twitter\n\n" + error.localizedDescription)
-        })
+        self.requestTweets()
     }
     
     // Mark: UITableViewDataSource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.tweets.count;
+        return self.timeline.count();
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(tweetCellId) as! TweetCell
         
-        let tweet = self.tweets[indexPath.row]
+        let tweet = self.timeline.itemAtIndex(indexPath.row)
         cell.showTweet(tweet)
         cell.layoutIfNeeded()
         
@@ -68,9 +59,21 @@ class HomeViewController: UIViewController, UITableViewDataSource {
 
     // Mark: private
     
-    private func showTweets(tweets: [JSONValue]?) {
-        self.tweets = Tweet.parseJSONArray(tweets!)
-        
+    private func requestTweets() {
+        self.twitter?.getStatusesHomeTimelineWithCount(20, sinceID: nil, success: {
+            statuses in
+            
+            self.timeline = self.timeline.add(Tweet.parseJSONArray(statuses!))
+            self.updateTable()
+            
+            }, failure: {
+                error in
+                
+                self.showAlert("Error", message: "Failed to receive tweets from Twitter\n\n" + error.localizedDescription)
+        })
+    }
+    
+    private func updateTable() {
         dispatch_async(dispatch_get_main_queue(), {
             self.tweetTableView.reloadData()
         })
