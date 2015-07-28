@@ -13,6 +13,8 @@ class HomeViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tweetTableView: UITableView!
     
+    var refreshControl: UIRefreshControl!
+    
     let tweetCellId = "tweet_cell_id"
     
     var twitter: Swifter?
@@ -38,6 +40,11 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         self.tweetTableView.estimatedRowHeight = 120
         self.tweetTableView.rowHeight = UITableViewAutomaticDimension
         
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: .ValueChanged)
+        self.tweetTableView.addSubview(self.refreshControl)
+        
         self.requestTweets()
     }
     
@@ -56,7 +63,13 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         
         return cell
     }
-
+    
+    // Mark: UIRefreshControl
+    
+    func refresh(sender: AnyObject) {
+        requestTweets()
+    }
+    
     // Mark: private
     
     private func requestTweets() {
@@ -65,6 +78,8 @@ class HomeViewController: UIViewController, UITableViewDataSource {
             
             self.timeline = self.timeline.add(Tweet.parseJSONArray(statuses!))
             self.updateTable()
+            
+            self.refreshControl.endRefreshing()
             
             }, failure: {
                 error in
