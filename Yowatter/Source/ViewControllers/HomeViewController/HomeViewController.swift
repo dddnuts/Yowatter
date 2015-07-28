@@ -68,6 +68,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     
     func refresh(sender: AnyObject) {
         requestTweets()
+        self.refreshControl.endRefreshing()
     }
     
     // Mark: private
@@ -81,8 +82,6 @@ class HomeViewController: UIViewController, UITableViewDataSource {
             
             self.timeline = self.timeline.add(Tweet.parseJSONArray(statuses!))
             self.updateTable()
-            
-            self.refreshControl.endRefreshing()
             
             }, failure: {
                 error in
