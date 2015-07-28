@@ -11,6 +11,14 @@ import UIKit
 struct Timeline {
     var tweets: [Tweet]
     
+    func count() -> Int {
+        return tweets.count
+    }
+    
+    func itemAtIndex(index: Int) -> Tweet {
+        return tweets[index]
+    }
+    
     func add(tweets: [Tweet]) -> Timeline {
         return Timeline(tweets: self.tweets + tweets)
     }
