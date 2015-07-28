@@ -11,6 +11,12 @@ import UIKit
 struct Timeline {
     var tweets: [Tweet]
     
+    init(tweets: [Tweet]) {
+        self.tweets = tweets.sorted {
+            t1, t2 in t1.id > t2.id
+        }
+    }
+    
     func isEmpty() -> Bool {
         return self.count() == 0
     }
