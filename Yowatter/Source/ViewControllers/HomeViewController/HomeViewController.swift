@@ -73,7 +73,10 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     // Mark: private
     
     private func requestTweets() {
-        self.twitter?.getStatusesHomeTimelineWithCount(20, sinceID: nil, success: {
+        
+        let sinceID: String! = self.timeline.isEmpty() ? nil : String(self.timeline.sinceID())
+        
+        self.twitter?.getStatusesHomeTimelineWithCount(20, sinceID: sinceID, success: {
             statuses in
             
             self.timeline = self.timeline.add(Tweet.parseJSONArray(statuses!))

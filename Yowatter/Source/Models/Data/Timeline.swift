@@ -11,6 +11,10 @@ import UIKit
 struct Timeline {
     var tweets: [Tweet]
     
+    func isEmpty() -> Bool {
+        return self.count() == 0
+    }
+    
     func count() -> Int {
         return tweets.count
     }
@@ -29,6 +33,6 @@ struct Timeline {
                 return tweet.id
             }
             return (u > tweet.id) ? u : tweet.id
-        })
+        }) + 1
     }
 }
