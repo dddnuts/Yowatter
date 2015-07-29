@@ -15,6 +15,8 @@ class TweetCell: UITableViewCell {
     @IBOutlet weak var screenNameLabel: UILabel!
     
     @IBOutlet weak var tweetTextLabel: UILabel!
+    @IBOutlet weak var tweetImageView: UIImageView!
+    @IBOutlet weak var tweetImageViewAspectRatio: NSLayoutConstraint!
     
     override func awakeFromNib() {
         self.userImageView.clipsToBounds = true
