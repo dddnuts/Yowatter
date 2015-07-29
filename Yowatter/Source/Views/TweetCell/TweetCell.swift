@@ -15,10 +15,19 @@ class TweetCell: UITableViewCell {
     @IBOutlet weak var screenNameLabel: UILabel!
     
     @IBOutlet weak var tweetTextLabel: UILabel!
+    @IBOutlet weak var tweetImageView: UIImageView!
+    @IBOutlet weak var tweetImageViewHeight: NSLayoutConstraint!
+    
+    var tweetImageViewHeightDefault: CGFloat!;
     
     override func awakeFromNib() {
         self.userImageView.clipsToBounds = true
         self.userImageView.layer.cornerRadius = 5
+        
+        self.tweetImageView.clipsToBounds = true
+        self.tweetImageView.layer.cornerRadius = 5
+        self.tweetImageView.contentMode = .ScaleAspectFill
+        self.tweetImageViewHeightDefault = self.tweetImageViewHeight.constant
     }
     
     func showTweet(tweet: Tweet) {
@@ -35,6 +44,21 @@ class TweetCell: UITableViewCell {
         self.screenNameLabel.text = user.screenName
         
         self.tweetTextLabel.text = tweet.text
+        
+        if (tweet.entities.media.count > 0) {
+            var media = tweet.entities.media[0];
+            self.getDataFromURL(media.url!) { data in
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.tweetImageView.image = UIImage(data: data!)
+                }
+            }
+            
+            self.tweetImageViewHeight.constant = tweetImageViewHeightDefault
+            
+        } else {
+            self.tweetImageView.image = nil
+            self.tweetImageViewHeight.constant = 0.0
+        }
     }
     
     private func getDataFromURL(url: NSURL, completion: ((data: NSData?) -> Void)) {

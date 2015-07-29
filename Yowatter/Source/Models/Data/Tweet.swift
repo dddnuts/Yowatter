@@ -13,16 +13,16 @@ struct Tweet {
     var id: Int
     var user: User
     var text: String
+    var entities: Entity
     
     static func parseJSONArray(jsonArray: [JSONValue]) -> [Tweet] {
-        return jsonArray.map({
-            m in
-            
-            return Tweet.parseJSON(m)
-        })
+        return jsonArray.map({ e in return Tweet.parseJSON(e) })
     }
     
     static func parseJSON(json: JSONValue) -> Tweet {
-        return Tweet(id: json["id"].integer!, user: User.parseJSON(json["user"]), text: json["text"].string!)
+        return Tweet(id: json["id"].integer!,
+                     user: User.parseJSON(json["user"]),
+                     text: json["text"].string!,
+                     entities: Entity.parseJSON(json["entities"]))
     }
 }

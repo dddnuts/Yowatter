@@ -22,6 +22,8 @@
 		9D2C08EA1B646FA600BA7981 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C08E81B646FA600BA7981 /* TweetCell.xib */; };
 		9D2C08EE1B64716200BA7981 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08ED1B64716200BA7981 /* Tweet.swift */; };
 		9D2C08F01B64717300BA7981 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C08EF1B64717300BA7981 /* User.swift */; };
+		9D4834721B6902C0005FAC4C /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4834711B6902C0005FAC4C /* Entity.swift */; };
+		9D4834771B690389005FAC4C /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4834761B690389005FAC4C /* Media.swift */; };
 		9D75DBE21B67B26500C0275E /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D75DBE11B67B26500C0275E /* Timeline.swift */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +105,8 @@
 		9D2C08E81B646FA600BA7981 /* TweetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TweetCell.xib; path = Source/Views/TweetCell/TweetCell.xib; sourceTree = "<group>"; };
 		9D2C08ED1B64716200BA7981 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tweet.swift; path = Source/Models/Data/Tweet.swift; sourceTree = "<group>"; };
 		9D2C08EF1B64717300BA7981 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Source/Models/Data/User.swift; sourceTree = "<group>"; };
+		9D4834711B6902C0005FAC4C /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = Source/Models/Data/Entity.swift; sourceTree = "<group>"; };
+		9D4834761B690389005FAC4C /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Media.swift; path = Source/Models/Media.swift; sourceTree = "<group>"; };
 		9D75DBE11B67B26500C0275E /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Models/Data/Timeline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -285,6 +289,8 @@
 				9D2C08ED1B64716200BA7981 /* Tweet.swift */,
 				9D2C08EF1B64717300BA7981 /* User.swift */,
 				9D75DBE11B67B26500C0275E /* Timeline.swift */,
+				9D4834711B6902C0005FAC4C /* Entity.swift */,
+				9D4834761B690389005FAC4C /* Media.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -434,7 +440,9 @@
 				9D2C08921B6372E800BA7981 /* AppDelegate.swift in Sources */,
 				9D2C08DF1B64601F00BA7981 /* Color.swift in Sources */,
 				9D2C08E91B646FA600BA7981 /* TweetCell.swift in Sources */,
+				9D4834771B690389005FAC4C /* Media.swift in Sources */,
 				9D2C08EE1B64716200BA7981 /* Tweet.swift in Sources */,
+				9D4834721B6902C0005FAC4C /* Entity.swift in Sources */,
 				9D2C08D11B63893C00BA7981 /* AuthViewController.swift in Sources */,
 				9D2C08B51B63786500BA7981 /* HomeViewController.swift in Sources */,
 				9D2C08F01B64717300BA7981 /* User.swift in Sources */,

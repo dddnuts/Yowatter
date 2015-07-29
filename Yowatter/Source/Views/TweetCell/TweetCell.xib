@@ -7,8 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="TweetCell" customModule="Yowatter" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="240" id="KGk-i7-Jjw" customClass="TweetCell" customModule="Yowatter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="239"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -22,13 +22,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="UserName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTu-bs-cpT" userLabel="UserNameLabel">
-                        <rect key="frame" x="58" y="8" width="65" height="16"/>
+                        <rect key="frame" x="58" y="8" width="64.5" height="16"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="@screenname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcj-VK-pu3" userLabel="ScreenNameLabel">
-                        <rect key="frame" x="128" y="9" width="184" height="14"/>
+                        <rect key="frame" x="127" y="9" width="184.5" height="13.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -39,29 +39,40 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NHu-as-cCL">
+                        <rect key="frame" x="58" y="63" width="254" height="160"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="160" id="Eja-y3-MPJ"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="DTu-bs-cpT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="5sm-Es-5Vb"/>
                     <constraint firstItem="XQq-Ou-5BZ" firstAttribute="leading" secondItem="DTu-bs-cpT" secondAttribute="leading" id="AKN-3g-2fz"/>
                     <constraint firstItem="zeS-wr-iCx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="AXF-xR-jcV"/>
+                    <constraint firstItem="XQq-Ou-5BZ" firstAttribute="leading" secondItem="NHu-as-cCL" secondAttribute="leading" id="DNn-v5-wUl"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Vcj-VK-pu3" secondAttribute="trailing" id="WTk-25-hxV"/>
+                    <constraint firstItem="NHu-as-cCL" firstAttribute="top" secondItem="XQq-Ou-5BZ" secondAttribute="bottom" constant="5" id="gXd-QI-1Et"/>
                     <constraint firstItem="Vcj-VK-pu3" firstAttribute="leading" secondItem="DTu-bs-cpT" secondAttribute="trailing" constant="5" id="jJz-00-UQX"/>
                     <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="zeS-wr-iCx" secondAttribute="bottom" id="kWy-1x-2ru"/>
                     <constraint firstItem="XQq-Ou-5BZ" firstAttribute="top" secondItem="DTu-bs-cpT" secondAttribute="bottom" constant="5" id="mcX-5b-M7B"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="NHu-as-cCL" secondAttribute="bottom" id="mhk-WW-GsG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="NHu-as-cCL" secondAttribute="trailing" id="oZ8-xh-NCS"/>
                     <constraint firstItem="zeS-wr-iCx" firstAttribute="top" secondItem="DTu-bs-cpT" secondAttribute="top" constant="5" id="rjH-eC-gBG"/>
                     <constraint firstItem="Vcj-VK-pu3" firstAttribute="baseline" secondItem="DTu-bs-cpT" secondAttribute="baseline" constant="-1" id="ruE-B5-fzg"/>
-                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="XQq-Ou-5BZ" secondAttribute="bottom" id="tYK-pY-j3i"/>
                     <constraint firstItem="DTu-bs-cpT" firstAttribute="leading" secondItem="zeS-wr-iCx" secondAttribute="trailing" constant="8" id="uUY-7F-9gc"/>
                     <constraint firstAttribute="trailingMargin" secondItem="XQq-Ou-5BZ" secondAttribute="trailing" id="vhl-Mh-oJv"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="screenNameLabel" destination="Vcj-VK-pu3" id="WPV-k0-5f8"/>
+                <outlet property="tweetImageView" destination="NHu-as-cCL" id="Vl8-A0-7vn"/>
+                <outlet property="tweetImageViewHeight" destination="Eja-y3-MPJ" id="BJc-BH-APc"/>
                 <outlet property="tweetTextLabel" destination="XQq-Ou-5BZ" id="nnw-Rf-1cq"/>
                 <outlet property="userImageView" destination="zeS-wr-iCx" id="tXb-qe-NGV"/>
                 <outlet property="userNameLabel" destination="DTu-bs-cpT" id="crU-SP-3CH"/>
             </connections>
-            <point key="canvasLocation" x="-137" y="153"/>
+            <point key="canvasLocation" x="-137" y="212.5"/>
         </tableViewCell>
     </objects>
 </document>
