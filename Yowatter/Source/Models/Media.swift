@@ -10,7 +10,7 @@ import UIKit
 import SwifteriOS
 
 struct Media {
-    var id: Int
+    var id: Double
     var url: NSURL?
     
     static func parseJSONArray(jsonArray: [JSONValue]) -> [Media] {
@@ -18,6 +18,6 @@ struct Media {
     }
     
     static func parseJSON(json: JSONValue) -> Media {
-        return Media(id: json["id"].integer!, url: NSURL(string: json["media_url"].string!))
+        return Media(id: json["id"].double!, url: NSURL(string: json["media_url"].string!))
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 import SwifteriOS
 
 struct Tweet {
-    var id: Int
+    var id: Double
     var user: User
     var text: String
     var entities: Entity
@@ -20,7 +20,7 @@ struct Tweet {
     }
     
     static func parseJSON(json: JSONValue) -> Tweet {
-        return Tweet(id: json["id"].integer!,
+        return Tweet(id: json["id"].double!,
                      user: User.parseJSON(json["user"]),
                      text: json["text"].string!,
                      entities: Entity.parseJSON(json["entities"]))

@@ -33,8 +33,8 @@ struct Timeline {
         return Timeline(tweets: self.tweets + tweets)
     }
     
-    func sinceID() -> Int! {
-        return tweets.reduce(nil, combine: {(u: Int!, tweet: Tweet) -> Int! in
+    func sinceID() -> Double! {
+        return tweets.reduce(nil, combine: {(u: Double!, tweet: Tweet) -> Double! in
             if u == nil {
                 return tweet.id
             }
