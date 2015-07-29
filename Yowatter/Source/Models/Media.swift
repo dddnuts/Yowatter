@@ -18,6 +18,6 @@ struct Media {
     }
     
     static func parseJSON(json: JSONValue) -> Media {
-        return Media(id: json["id"].integer!, url: NSURL(string: json["url"].string!))
+        return Media(id: json["id"].integer!, url: NSURL(string: json["media_url"].string!))
     }
 }

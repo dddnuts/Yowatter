@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -41,9 +40,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NHu-as-cCL">
-                        <rect key="frame" x="58" y="63" width="254" height="143"/>
+                        <rect key="frame" x="58" y="63" width="254" height="160"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="NHu-as-cCL" secondAttribute="height" multiplier="16:9" id="Bri-yg-nZI"/>
+                            <constraint firstAttribute="height" constant="160" id="Eja-y3-MPJ"/>
                         </constraints>
                     </imageView>
                 </subviews>
@@ -68,7 +67,7 @@
             <connections>
                 <outlet property="screenNameLabel" destination="Vcj-VK-pu3" id="WPV-k0-5f8"/>
                 <outlet property="tweetImageView" destination="NHu-as-cCL" id="Vl8-A0-7vn"/>
-                <outlet property="tweetImageViewAspectRatio" destination="Bri-yg-nZI" id="rQY-6P-I6W"/>
+                <outlet property="tweetImageViewHeight" destination="Eja-y3-MPJ" id="BJc-BH-APc"/>
                 <outlet property="tweetTextLabel" destination="XQq-Ou-5BZ" id="nnw-Rf-1cq"/>
                 <outlet property="userImageView" destination="zeS-wr-iCx" id="tXb-qe-NGV"/>
                 <outlet property="userNameLabel" destination="DTu-bs-cpT" id="crU-SP-3CH"/>
