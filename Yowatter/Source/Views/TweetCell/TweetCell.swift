@@ -13,6 +13,7 @@ class TweetCell: UITableViewCell {
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var screenNameLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     
     @IBOutlet weak var tweetTextLabel: UILabel!
     @IBOutlet weak var tweetImageView: UIImageView!
