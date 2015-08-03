@@ -43,6 +43,7 @@ class TweetCell: UITableViewCell {
         
         self.userNameLabel.text = user.name
         self.screenNameLabel.text = user.screenName
+        self.timeLabel.text = TimeViewHelper.format(tweet.time)
         
         self.tweetTextLabel.text = tweet.text
         
