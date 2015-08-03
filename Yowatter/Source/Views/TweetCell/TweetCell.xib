@@ -22,13 +22,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="UserName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTu-bs-cpT" userLabel="UserNameLabel">
-                        <rect key="frame" x="58" y="8" width="64.5" height="16"/>
+                        <rect key="frame" x="58" y="8" width="65" height="16"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="@screenname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcj-VK-pu3" userLabel="ScreenNameLabel">
-                        <rect key="frame" x="127" y="9" width="184.5" height="13.5"/>
+                        <rect key="frame" x="128" y="9" width="72" height="14"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -45,13 +45,21 @@
                             <constraint firstAttribute="height" constant="160" id="Eja-y3-MPJ"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="2015/08/01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLi-hZ-1ol" userLabel="TimeLabel">
+                        <rect key="frame" x="258" y="8" width="54" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="DTu-bs-cpT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="5sm-Es-5Vb"/>
+                    <constraint firstItem="GLi-hZ-1ol" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Vcj-VK-pu3" secondAttribute="trailing" constant="5" id="6HR-il-rlX"/>
                     <constraint firstItem="XQq-Ou-5BZ" firstAttribute="leading" secondItem="DTu-bs-cpT" secondAttribute="leading" id="AKN-3g-2fz"/>
                     <constraint firstItem="zeS-wr-iCx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="AXF-xR-jcV"/>
                     <constraint firstItem="XQq-Ou-5BZ" firstAttribute="leading" secondItem="NHu-as-cCL" secondAttribute="leading" id="DNn-v5-wUl"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="Vcj-VK-pu3" secondAttribute="trailing" id="WTk-25-hxV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="GLi-hZ-1ol" secondAttribute="trailing" id="Ybi-3J-zJm"/>
+                    <constraint firstItem="GLi-hZ-1ol" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="e1s-PC-cAl"/>
                     <constraint firstItem="NHu-as-cCL" firstAttribute="top" secondItem="XQq-Ou-5BZ" secondAttribute="bottom" constant="5" id="gXd-QI-1Et"/>
                     <constraint firstItem="Vcj-VK-pu3" firstAttribute="leading" secondItem="DTu-bs-cpT" secondAttribute="trailing" constant="5" id="jJz-00-UQX"/>
                     <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="zeS-wr-iCx" secondAttribute="bottom" id="kWy-1x-2ru"/>
@@ -66,6 +74,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="screenNameLabel" destination="Vcj-VK-pu3" id="WPV-k0-5f8"/>
+                <outlet property="timeLabel" destination="GLi-hZ-1ol" id="QJo-yy-uzq"/>
                 <outlet property="tweetImageView" destination="NHu-as-cCL" id="Vl8-A0-7vn"/>
                 <outlet property="tweetImageViewHeight" destination="Eja-y3-MPJ" id="BJc-BH-APc"/>
                 <outlet property="tweetTextLabel" destination="XQq-Ou-5BZ" id="nnw-Rf-1cq"/>

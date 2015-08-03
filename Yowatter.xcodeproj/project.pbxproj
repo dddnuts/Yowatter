@@ -25,6 +25,7 @@
 		9D4834721B6902C0005FAC4C /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4834711B6902C0005FAC4C /* Entity.swift */; };
 		9D4834771B690389005FAC4C /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4834761B690389005FAC4C /* Media.swift */; };
 		9D75DBE21B67B26500C0275E /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D75DBE11B67B26500C0275E /* Timeline.swift */; };
+		9DB6E34C1B6EEF0D00E86ADE /* TimeViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6E34B1B6EEF0D00E86ADE /* TimeViewHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		9D4834711B6902C0005FAC4C /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = Source/Models/Data/Entity.swift; sourceTree = "<group>"; };
 		9D4834761B690389005FAC4C /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Media.swift; path = Source/Models/Media.swift; sourceTree = "<group>"; };
 		9D75DBE11B67B26500C0275E /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Models/Data/Timeline.swift; sourceTree = "<group>"; };
+		9DB6E34B1B6EEF0D00E86ADE /* TimeViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeViewHelper.swift; path = Source/Views/ViewHelpers/TimeViewHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 		9D2C08E21B646F7600BA7981 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9DB6E3471B6EEEE200E86ADE /* ViewHelpers */,
 				9D2C08E61B646F7A00BA7981 /* TweetCell */,
 			);
 			name = Views;
@@ -293,6 +296,14 @@
 				9D4834761B690389005FAC4C /* Media.swift */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		9DB6E3471B6EEEE200E86ADE /* ViewHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				9DB6E34B1B6EEF0D00E86ADE /* TimeViewHelper.swift */,
+			);
+			name = ViewHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,6 +450,7 @@
 				9D75DBE21B67B26500C0275E /* Timeline.swift in Sources */,
 				9D2C08921B6372E800BA7981 /* AppDelegate.swift in Sources */,
 				9D2C08DF1B64601F00BA7981 /* Color.swift in Sources */,
+				9DB6E34C1B6EEF0D00E86ADE /* TimeViewHelper.swift in Sources */,
 				9D2C08E91B646FA600BA7981 /* TweetCell.swift in Sources */,
 				9D4834771B690389005FAC4C /* Media.swift in Sources */,
 				9D2C08EE1B64716200BA7981 /* Tweet.swift in Sources */,

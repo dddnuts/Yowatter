@@ -14,6 +14,7 @@ struct Tweet {
     var user: User
     var text: String
     var entities: Entity
+    var time: NSDate
     
     static func parseJSONArray(jsonArray: [JSONValue]) -> [Tweet] {
         return jsonArray.map({ e in return Tweet.parseJSON(e) })
@@ -23,6 +24,13 @@ struct Tweet {
         return Tweet(id: json["id"].double!,
                      user: User.parseJSON(json["user"]),
                      text: json["text"].string!,
-                     entities: Entity.parseJSON(json["entities"]))
+                     entities: Entity.parseJSON(json["entities"]),
+                     time: Tweet.parseDate(json["created_at"].string!))
+    }
+    
+    private static func parseDate(date: String) -> NSDate {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "eee MMM dd HH:mm:ss ZZZZ yyyy"
+        return dateFormatter.dateFromString(date)!
     }
 }
